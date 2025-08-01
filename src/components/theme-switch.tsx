@@ -1,11 +1,12 @@
 import { useTheme } from '@heroui/use-theme'
 import { MoonFilledIcon, SunFilledIcon } from '@/components/icons'
+import { cn } from '@/utils'
 
-export function ThemeSwitche() {
+export function ThemeSwitch({ className }: React.ComponentProps<'div'>) {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div>
+    <div className={cn(className)}>
       {
         theme === 'dark'
           ? (

@@ -6,4 +6,19 @@
 html, body {
   margin: 0;
   padding: 0;
+  user-select: none;
+}
+
+:root {
+  --border-color: #d9d9d9;
+  --designer-color: #fafafc;
+  --designer-dot-color: #373739;
+  --bg: #fff
+}
+
+.dark {
+  --border-color: #ffffff20;
+  --designer-color: #18181c;
+  --designer-dot-color: #86909c;
+  --bg: #252526
 }
